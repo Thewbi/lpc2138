@@ -2,12 +2,16 @@
 
 Samples and Tools for the lpc2138.
 
-The NXP LPC2138 chip is almost identical to the LPC2134 chip used in the infamoue T962 reflow oven!
+The NXP LPC2138 chip is almost identical to the LPC2134 chip used in the infamous T962 reflow oven!
 See https://github.com/UnifiedEngineering/T-962-improvements
 
 I am trying to learn programming the LPC2134 / LPC2138 in order to understand what the improved firmware
 of the reflow oven does! This knowledge could be applied to building another reflow oven using a simple
 toaster oven of something of that sorts.
+
+As an alternative to this approach, you can use the Rowley CrossWorks IDE. This IDE works very, very well
+but has a limitation of the size of the .hex file it will produce when using the unpayed, free version.
+The payed version does not have this size limitation.
 
 ## Hardware
 

@@ -72,6 +72,11 @@ continue
 ```
 
 The application is now running.
+
+The specific sample application (led.elf) provided in this folder, is called led.elf but it actually does provide a UART interface.
+Whenever you send in a string of characters into the UART using some terminal emulator (115200 baud, 8N1) then the microcontroller
+will echo this text. As a terminal emulator use teraterm, hyperterm, putty or YAT.
+
 To start debugging, interrupt the process by typing Ctrl+C (for me this sometimes immediaetly continues the app. Try several times)
 
 list displays the source code.
