@@ -34,6 +34,7 @@ For me, this is the version GNU ARM Eclipse OpenOCD v0.8.0-20150119* (binary fil
 Install this version to a folder called OpenOCD_080:
 
 ```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
 "C:\Program Files (x86)\GNU ARM Eclipse\OpenOCD_080\bin\openocd.exe" -f openocd-usb.cfg -f lpc2138.cfg
 ```
 
@@ -45,6 +46,7 @@ You can download the ARM toolchain from here: https://developer.arm.com/download
 # Starting GNU Debugger (gdb)
 
 ```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
 C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
 target remote localhost:3333
 monitor init
@@ -67,7 +69,48 @@ This works: the load command and a .elf file works!!!
 https://www.zeuthen.desy.de/dv/documentation/unixguide/infohtml/gdb/Starting.html
 
 ```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
+C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
+target remote localhost:3333
+file C:/Users/lapto/Downloads/Wbudy-main/Wbudy-main/2138/led.elf
 load C:/Users/lapto/Downloads/Wbudy-main/Wbudy-main/2138/led.elf
+continue
+```
+
+```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
+C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
+target remote localhost:3333
+file C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/T-962-controller.elf
+load C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/T-962-controller.elf
+continue
+```
+
+The led_blinky.elf has been created by Rowley CrossWorks and it does work!
+```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
+C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
+target remote localhost:3333
+file C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/led_blinky.elf
+load C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/led_blinky.elf
+continue
+```
+
+```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
+C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
+target remote localhost:3333
+file C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/lpc2138_edu_board.elf
+load C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/lpc2138_edu_board.elf
+continue
+```
+
+```
+cd C:\Users\lapto\dev\lpc2138\OpenOCD_GDB_Sample
+C:\Users\lapto\Downloads\arm-gnu-toolchain-14.3.rel1-mingw-w64-x86_64-arm-none-eabi\bin\arm-none-eabi-gdb.exe
+target remote localhost:3333
+file C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/main.elf
+load C:/Users/lapto/dev/lpc2138/OpenOCD_GDB_Sample/main.elf
 continue
 ```
 
